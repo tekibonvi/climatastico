@@ -120,6 +120,16 @@ footer p {
 main p {
     margin-bottom: 16px;
 }
+/*Agregamos el estilo para todos los botones.*/
+button{
+    border: none;
+    background-color: var(--color-theme);
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    
+}
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
