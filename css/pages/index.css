@@ -1,15 +1,15 @@
 .card{
+    display: flex;
+    flex-direction: column;
     margin: 40px;
     padding-left: 15px;
     padding-right: 15px;
-
-    border-radius: 25px;
+    border-radius: 25px 25px 25px 25px;
     box-shadow: 0 0 15px rgb(0, 0, 0);
     
 }
 .card img{
     /*CENTRAMOS LA IMAGEN*/
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }

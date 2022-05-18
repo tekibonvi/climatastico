@@ -38,6 +38,7 @@ header {
     top: 0;
     width: 100%;
     background: var(--color-theme);
+    border-radius: 0px 0px 25px 25px;
 }
 
 nav>ul {
@@ -64,6 +65,7 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-radius: 15px 15px 0 0;
 }
 
 main {
@@ -115,6 +117,7 @@ footer {
 footer p {
     font-size: small;
     color: white;
+    
 }
 
 main p {
