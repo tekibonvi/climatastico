@@ -1,1 +1,25 @@
-/*Futuro uso.*/
+.add-city{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-city p{
+    border-radius: 15px;
+    color:white;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+.Sucess{
+    background-color: #28a745;
+}
+
+.Error{
+    background-color: #dc3545;
+}
+
+.Warning{
+    background-color: #ffc107;
+}
