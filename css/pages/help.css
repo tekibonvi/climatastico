@@ -1,1 +1,39 @@
-/*Futuro uso.*/
+
+
+.formulario{
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+   
+}
+
+
+.contact-data{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+textarea{
+    resize: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.Error{
+    border-radius: 15px;
+    color:white;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: #dc3545;
+}

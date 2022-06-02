@@ -37,7 +37,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     border-radius: 0px 0px 25px 25px;
 }
 
@@ -107,7 +107,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -129,10 +129,11 @@ button{
     background-color: var(--color-theme);
     color: white;
     padding: 10px;
-    border-radius: 10%;
-    display: inline-block;
-    
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;        
 }
+
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {

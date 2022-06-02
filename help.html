@@ -42,19 +42,23 @@
                
         </section>
         <section>
-            <form action="">
-                <label for="Nombre"><b>Nombre:</b></label>
+            <form action="" class="formulario">
+                <label for="Nombre">Nombre:</label>
                 <input type="text" id="Nombre" name="Nombre">
                 <br>
-                <label for="mail"><b>Email:</b></label>
+                <label for="mail">Email:</label>
                 <input type="email" name="email" id="email" required>
                 <br>
-                <label for="mensaje"><b>Mensaje:</b></label>
+                <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="mensaje"></textarea>
                 <br>
-                <button type="reset">Limpiar</button>
-                <button type="submit">Enviar</button>
+                <div class="contact-data">
+                    <button type="reset">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+                <p class="Error">Ingrese un mail válido</p>
             </form>
+        
         </section>
     </main>
     <footer>
