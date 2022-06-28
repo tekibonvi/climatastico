@@ -9,13 +9,15 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
+    <script src = "js/common.js" defer></script>
+    <script src = "js/pages/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>
             <img src = "img/favicon.png">
-            <span>Clima App</span>
+            <span>Climatástico</span>
         </h1>
         <nav>
             <ul>
@@ -32,24 +34,23 @@
             <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
             <form>
-                <select>
+                <select name = "city-list" id = "city-list">
                     <option value="" selected disabled>Seleccionar Ciudad</option>
-                    <option value="ROSARIO" >Rosario</option>
-                    <option value="RAFAELA" >Rafaela</option>    
-                </select>  
+               </select>  
                 <button>Consultar</button> 
             </form>
         </section>
+            <p id="error">No hay ciudades cargadas</p>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
             <div class="card">
-                <h2>Rosario</h2>
-                <img src ="http://openweathermap.org/img/wn/01d@2x.png">
-                <p>Temperatura: 25.31°</p>
-                <p>Sensación térmica: 24.65°</p>
-                <p>Húmedad: 29%</p>
-                <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión:1011 P</p>
+                <h2 id = "city"></h2>
+                <img id = "img-temp">
+                <p id = "celsius-temp"></p>
+                <p id = "thermal-sens"></p>
+                <p id = "humidity"></p>
+                <p id = "wind"></p>
+                <p id = "preassure"></p>
             </div>
         </section>
     </main>

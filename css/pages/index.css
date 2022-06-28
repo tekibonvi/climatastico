@@ -1,5 +1,5 @@
 .card{
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 40px;
     padding-left: 15px;
@@ -17,4 +17,14 @@
 .card p{
   
     text-align: center;
+}
+
+#error {
+    display: none;
+    background-color: yellow;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
 }

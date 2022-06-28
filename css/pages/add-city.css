@@ -12,14 +12,17 @@
     margin: 10px;
 }
 
-.Sucess{
+#sucess{
+    display: none;
     background-color: #28a745;
 }
 
-.Error{
+#error{
+    display: none;
     background-color: #dc3545;
 }
 
-.Warning{
+#warning{
+    display: none;
     background-color: #ffc107;
 }
