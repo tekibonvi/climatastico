@@ -33,14 +33,14 @@
             <div class="add-city">
                 <label for="agregarciudad"><b>Ingrese la ciudad a agregar:</b></label>
                 <input type="text" id="agregarciudad" name="agregarciudad">
-                <button id = "button" onclick= addNewCityToLocalStorage()>Agregar</button>
+                <button id = "button">Agregar</button>
                 
                 <!--Carteles de advertencia-->
-                
+            <div id="emergent-msg">
                 <p class="Sucess" id = "sucess">Ciudad agregada con éxito</p>            
                 <p class="Error" id = "error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
                 <p class="Warning" id = "warning">La Ciudad ingresada ya se encuentra almacenada</p>
-            
+            </div>        
             </div>
         </section>
     </main>

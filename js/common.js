@@ -1,7 +1,8 @@
 const API_KEY = "edff2cc8b5433c9ffe751619332f1945"
-
-function getLocalStorage(){
-    let cities = localStorage.getItem("CITIES");
+const weatherData = document.getElementById("city-list")
+const addCity = document.getElementById("agregarciudad")
+function getCitiesFromLocalStorage(){
+    let cities = localStorage.getItem("CITIES")
     
     if (cities){
         cities = JSON.parse(cities);
@@ -9,19 +10,28 @@ function getLocalStorage(){
         cities = [];
     }
     return cities;
-    }
-    
-    function requestApi(cityName){
-        return fetch(`api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric&lang=es`)
-        .then(response =>{
-            if (response.ok)return response.json();
+}
+
+   function getApi(){
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.value}&appid=${API_KEY}&units=metric&lang=es`
+
+    fetch(url).then(function(res){
+        if (res.ok){
+            return res.json();
+        }else{
             throw new Error("error");
-        })
-        .then(data => {
-            showWeather(data);
-        })
-        .catch(error => {
-            return "error"
-        });
-    }
-    
+        }
+    }).then(function(data){
+        console.log(data);
+    }).catch(function(error){
+        return "error";
+    });
+}
+
+
+function PopMsgs(){
+    popUpMsg = document.getElementById("emergent-msg")
+    setTimeout(function(){
+        popUpMsg.remove()
+    },1500)
+}
