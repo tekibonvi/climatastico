@@ -26,7 +26,7 @@ let getterButton = document.getElementById("get-data")
 getterButton.addEventListener('click',function(e){
     e.preventDefault();
     console.log(weatherData.value)
-    getApi()
+    getApi(weatherData)
 })}
 
 getElements()

@@ -11,7 +11,19 @@
 //}
 
 let button = document.getElementById("button")
-function addNewCityToLocalStorage(){
+async function validate(newCity){
+    let cities = getCitiesFromLocalStorage()
+    if (cities.includes(newCity.value)){
+        return "warning";
+    }
+    if (await getApi(newCity) == "error"){
+        return "error"
+    }
+    else{
+        return "sucess"
+    }
+}
+async  function addNewCityToLocalStorage(){
 
     let warningMess = document.getElementById("warning")
     let successMess = document.getElementById("sucess")
@@ -19,32 +31,22 @@ function addNewCityToLocalStorage(){
     let cities = getCitiesFromLocalStorage()
     let newCity = document.getElementById("agregarciudad")
 
-    function validate(){
-        if (cities.includes(newCity.value)){
-            return "warning";
-        }
-       // else{ 
-       //     if (await getApi(newCity.value) == "error") {
-       //         return "error";
-       // }
-        else{
-            return "sucess"
-        }
-    }
 
-    switch(validate()){
+
+  switch(await validate(newCity)){
       case "warning":
         warningMess.style.display = "block";
-        PopMsgs()
+        PopMsgs(warningMess)
         break;
       case "sucess":
         successMess.style.display = "block";
         cities.push(newCity.value);
         localStorage.setItem("CITIES", JSON.stringify(cities));
-        PopMsgs()
+        PopMsgs(successMess)
         break;
      case "error":
         errorMsg.style.display = "block";
+        PopMsgs(errorMsg)
         break;
     }
 }
