@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
-    <link rel = "icon" href="./img/favicon.png">.
+    <link rel = "icon" href="./img/favicon3.png">.
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="stylesheet" href="css/loader.css">
     <script src = "js/common.js" defer></script>
     <script src = "js/pages/index.js" defer></script>
 </head>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <h1>
-            <img src = "img/favicon.png">
+            <img src = "img/favicon3.png">
             <span>Climatástico</span>
         </h1>
         <nav>
@@ -54,7 +55,9 @@ botón de consultar -->
                 <p id = "preassure"></p>
             </div>
             <div id="errorload">Debe ingresar cuidades para interactuar</div>
+            
         </section>
+        <div class="loading" id = "loading"></div>
     </main>
     <footer>
         <p>

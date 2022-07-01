@@ -21,11 +21,10 @@ function getCitiesFromLocalStorage(){
     }
     return cities;
 }
-
+    
    function getApi(weatherData){
+    Loader()
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.value}&appid=${API_KEY}&units=metric&lang=es`
-
-
     return fetch(url)
     .then(function(res){
         if (res.ok){
@@ -59,3 +58,11 @@ async function newCard(data){
     wind.innerHTML=`Vientos: ${data.wind.speed} km/h`
     preassure.innerHTML=`Presión: ${data.main.pressure}`
     }
+
+async function Loader(){
+    let miLoader = document.getElementById("loading")
+    miLoader.style.display="block"
+    setTimeout(function(){
+        miLoader.style.display = "none";
+    },1500)
+}

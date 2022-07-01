@@ -1,0 +1,35 @@
+
+/*loader => https://codepen.io/ansdb/pen/ExgOvVg*/
+
+.loading {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 1em auto;
+    border: 5px solid #04957d;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .loading::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    position: relative;
+    left: -9px;
+    top: 10px;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

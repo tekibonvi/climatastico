@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
-    <link rel = "icon" href="./img/favicon.png">.
+    <link rel = "icon" href="./img/favicon3.png">.
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
+    <link rel="stylesheet" href="css/loader.css">
     <script src = "js/common.js" defer></script>
     <script src = "js/pages/add-city.js" defer></script>
 </head>
 <body>
     <header>
         <h1>
-            <img src = "img/favicon.png">
+            <img src = "img/favicon3.png">
             <span>Climatástico</span>
         </h1>
         <nav>
@@ -28,10 +29,10 @@
     </header>
     <!-- Contenido principal de la página -->
     <main>
-        <h2>Agregar Ciudad</h2>
+        <h2 for="agregarciudad">Agregar Ciudad</h2>
         <section>
             <div class="add-city">
-                <label for="agregarciudad"><b>Ingrese la ciudad a agregar:</b></label>
+                <label for="agregarciudad"><b>Ingresa una ciudad</b></label>
                 <input type="text" id="agregarciudad" name="agregarciudad">
                 <button id = "button">Agregar</button>
                 
@@ -41,9 +42,11 @@
                 <p class="Error" id = "error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
                 <p class="Warning" id = "warning">La Ciudad ingresada ya se encuentra almacenada</p>
                 <div class="lds-circle"><div></div></div>
-            </div>        
+            </div>  
+                   
             </div>
         </section>
+        <div class="loading" id = "loading"></div>
     </main>
     <footer>
         <p>

@@ -17,6 +17,7 @@ var(--color-back-active));
 }
 
 body {
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -38,7 +39,8 @@ header {
     top: 0;
     width: 100%;
     background: var(--color-gradient);
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 35px 35px;
+    box-shadow: 0px 2px var(--color-active);
 }
 
 nav>ul {
@@ -59,13 +61,15 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
-    border-radius: 15px 15px 0 0;
+    /*border-radius: 15px 15px 0 0;*/
 }
 
 main {
@@ -134,6 +138,7 @@ button{
     margin-bottom: 10px;        
 }
 
+
 #sucess{
     display: none;
     background-color: #28a745;
@@ -147,6 +152,10 @@ button{
 #warning{
     display: none;
     background-color: #ffc107;
+}
+button:hover, .sendForm:hover{
+    background-color: var(--color-back-active);
+    cursor: pointer;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
