@@ -1,3 +1,5 @@
+
+
 // La pasamos a common.js para poder usarla en el index.js
 //function getCitiesFromLocalStorage(){
 //    let cities = localStorage.getItem("CITIES")

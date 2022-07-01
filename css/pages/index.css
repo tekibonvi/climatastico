@@ -1,6 +1,8 @@
 .card{
     display: none;
     flex-direction: column;
+    background: rgb(247, 247, 247);
+    background: radial-gradient(circle, rgb(252, 252, 252) 0%, var(--color-active) 100%);
     margin: 40px;
     padding-left: 15px;
     padding-right: 15px;
