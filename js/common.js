@@ -25,7 +25,6 @@ function getCitiesFromLocalStorage(){
 }
     
  function getApi(weatherData){
-    Loader()
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.value}&appid=${API_KEY}&units=metric&lang=es`
     return fetch(url)
     .then(function(res){

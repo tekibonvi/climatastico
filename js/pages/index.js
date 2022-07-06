@@ -1,4 +1,5 @@
 let cityList = document.getElementById("city-list")
+
 function getSelectCities(){
     let cities = getCitiesFromLocalStorage()
     let errorMsg = document.getElementById("errorload")
@@ -33,6 +34,7 @@ const card = {
     description : document.getElementById("description-temp"),
 }
 //Esto me permite tomar los valores de la lista, sin que la pagina actualicce.
+
 async function getElements(){
 let weatherData = document.getElementById("city-list")
 let errorMsg = document.getElementById("errorload")
