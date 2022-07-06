@@ -7,7 +7,7 @@ async function validate(newCity){
     if (cities.includes(newCity.value)){
         return mensajes.warning();
     }
-    if (await getApi(newCity) == "error"){
+    if (await getApi(newCity) == false){
         return mensajes.error()
     }
     else{
