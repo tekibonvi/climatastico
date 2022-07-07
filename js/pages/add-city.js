@@ -32,6 +32,7 @@ async  function addNewCityToLocalStorage(){
             PopMsgs(successMess);
         },
         error:  function(){
+
         errorMsg.style.display = "block";
         PopMsgs(errorMsg);
     },
