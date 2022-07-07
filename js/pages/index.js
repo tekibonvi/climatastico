@@ -1,6 +1,7 @@
-let cityList = document.getElementById("city-list")
 
 function getSelectCities(){
+    let cityList = document.getElementById("city-list")
+
     let cities = getCitiesFromLocalStorage()
     let errorMsg = document.getElementById("errorload")
     let getterButton = document.getElementById("get-data")
@@ -37,7 +38,6 @@ const card = {
 
 async function getElements(){
 let weatherData = document.getElementById("city-list")
-let errorMsg = document.getElementById("errorload")
 let getterButton = document.getElementById("get-data")
 let cities = getCitiesFromLocalStorage()
 getterButton.addEventListener('click',function(e){
